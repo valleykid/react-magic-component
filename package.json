@@ -1,0 +1,12 @@
+{
+  "name": "react-magic-component",
+  "version": "0.1.0",
+  "description": "React component with binding events or lifecycles by selector",
+  "main": "index.js",
+  "repository": "https://github.com/valleykid/react-magic-component.git",
+  "author": "valleykid <valleykiddy@gmail.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^0.13.0 || ^0.14.0 || ^15.0.0 || ^16.0.0"
+  }
+}
