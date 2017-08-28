@@ -28,7 +28,7 @@ new:
 ```
 function LoggingButton (props, context) {
   return (
-    <button onClick={this.handleClick}>
+    <button>
       Click me
     </button>
   );
