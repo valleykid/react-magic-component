@@ -3,7 +3,7 @@ React component with binding events or lifecycles by selector
 
 ## Features
 
-## examples
+## Examples
 
 old:
 ```
