@@ -35,7 +35,7 @@ function LoggingButton (props, context) {
 }
 
 create(LoggingButton, {
-  events: {
+  props: {
     'onClick button': 'handleClick'
   },
   handleClick() {
