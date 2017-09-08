@@ -1,6 +1,6 @@
 {
   "name": "react-magic-component",
-  "version": "0.1.7-beta.11",
+  "version": "0.1.7-rc.1",
   "description": "React component with binding events or lifecycles by selector",
   "main": "index.js",
   "repository": "https://github.com/valleykid/react-magic-component.git",
