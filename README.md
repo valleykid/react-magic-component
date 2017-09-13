@@ -14,7 +14,7 @@ React component with binding events or lifecycles by selector
   - 组件的事件;
 - 绑定生命周期和事件时:
 
-  > 有三个对象需要注意: 目标组件/元素<elInst>、方法源组件<mtInst>、数据源组件<dsInst>
+  > 有三个对象需要注意: 目标组件/标签(elInst)、方法源组件(mtInst)、数据源组件(dsInst)
 
   - <b>数据源组件</b>指回调函数依赖的逻辑数据所在的组件。一般指你在哪个组件上定义魔法，该组件就是数据源组件。
   - <b>方法源组件</b>指回调函数的来源。如果是匿名函数或不包含`.`，则与数据源组件相同，反则用`Xxx.method`设定，方法源则为`Xxx`。
@@ -23,6 +23,8 @@ React component with binding events or lifecycles by selector
   - 支持设定是否覆盖<b>old-event/liferycle</b>，事件名后跟上`:0`不覆盖，反则或默认覆盖;
   - 支持设定<b>old-event/liferycle</b>是否在<b>new-event/liferycle</b>前执行，事件名后跟上`:^0`，默认之后执行;
   - 原生命周期函数的返回值会是新函数的第一个值，覆盖或无原生命函数则是undefined;
+- 魔法组件不影响普通嵌套，不会像connect私自加一层组件;
+- 请尽量不要在最外层组件如App上设置魔法，原因是外层组件会在mount改写前执行而影响注入;
 
 ## Examples
 
@@ -66,6 +68,9 @@ create(LoggingButton, {
 ```
 
 ## Quick Start
+
+- [https://github.com/valleykid/dva-example-user-dashboard](https://github.com/valleykid/dva-example-user-dashboard)
+- [https://github.com/valleykid/react-redux-todos](https://github.com/valleykid/react-redux-todos)
 
 ## License
 [MIT](https://tldrlegal.com/license/mit-license)
